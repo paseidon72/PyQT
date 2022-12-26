@@ -1,16 +1,42 @@
-# This is a sample Python script.
+from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QApplication, QMainWindow
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+import sys
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+class Window(QMainWindow):
+    def __init__(self):
+        super(Window, self).__init__()
+        self.setWindowTitle("Простая программа")
+        self.setGeometry(300, 250, 350, 200)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+        self.new_text = QtWidgets.QLabel(self)
+
+        self.main_text = QtWidgets.QLabel(self)
+        self.main_text.setText("Базовая надпись")
+        self.main_text.move(100, 100)
+        self.main_text.adjustSize()
+
+        self.btn = QtWidgets.QPushButton(self)
+        self.btn.move(70, 150)
+        self.btn.setText("Нажми")
+        self.btn.setFixedWidth(200)
+        self.btn.clicked.connect(self.add_label)
+
+
+    def add_label(self):
+        self.new_text.setText("Другой текст")
+        self.new_text.move(100, 50)
+        self.new_text.adjustSize()
+
+
+def application():
+    app = QApplication(sys.argv)
+    window = Window()
+
+    window.show()
+    sys.exit(app.exec_())
+
+
+if __name__ == "__main__":
+    application()
