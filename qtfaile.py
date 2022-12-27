@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'qtfaile.ui'
+# Form implementation generated from reading ui file 'C:\Users\Dell\PycharmProjects\PyQT\qtfaile.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.7
 #
@@ -48,7 +48,7 @@ class Ui_MainWindow(object):
 "background-color: rgb(255, 170, 127);")
         self.btn_equal.setObjectName("btn_equal")
         self.btn_1 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_1.setGeometry(QtCore.QRect(0, 230, 100, 90))
+        self.btn_1.setGeometry(QtCore.QRect(0, 230, 80, 90))
         font = QtGui.QFont()
         font.setPointSize(17)
         font.setBold(True)
@@ -57,7 +57,7 @@ class Ui_MainWindow(object):
         self.btn_1.setStyleSheet("background-color: rgb(170, 255, 255);")
         self.btn_1.setObjectName("btn_1")
         self.btn_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_2.setGeometry(QtCore.QRect(100, 230, 100, 90))
+        self.btn_2.setGeometry(QtCore.QRect(80, 230, 80, 90))
         font = QtGui.QFont()
         font.setPointSize(17)
         font.setBold(True)
@@ -66,7 +66,7 @@ class Ui_MainWindow(object):
         self.btn_2.setStyleSheet("background-color: rgb(170, 255, 255);")
         self.btn_2.setObjectName("btn_2")
         self.btn_3 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_3.setGeometry(QtCore.QRect(200, 230, 100, 90))
+        self.btn_3.setGeometry(QtCore.QRect(160, 230, 80, 90))
         font = QtGui.QFont()
         font.setPointSize(17)
         font.setBold(True)
@@ -75,7 +75,7 @@ class Ui_MainWindow(object):
         self.btn_3.setStyleSheet("background-color: rgb(170, 255, 255);")
         self.btn_3.setObjectName("btn_3")
         self.btn_4 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_4.setGeometry(QtCore.QRect(0, 140, 100, 90))
+        self.btn_4.setGeometry(QtCore.QRect(0, 140, 80, 90))
         font = QtGui.QFont()
         font.setPointSize(17)
         font.setBold(True)
@@ -84,7 +84,7 @@ class Ui_MainWindow(object):
         self.btn_4.setStyleSheet("background-color: rgb(170, 255, 255);")
         self.btn_4.setObjectName("btn_4")
         self.btn_5 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_5.setGeometry(QtCore.QRect(100, 140, 100, 90))
+        self.btn_5.setGeometry(QtCore.QRect(80, 140, 80, 90))
         font = QtGui.QFont()
         font.setPointSize(17)
         font.setBold(True)
@@ -93,7 +93,7 @@ class Ui_MainWindow(object):
         self.btn_5.setStyleSheet("background-color: rgb(170, 255, 255);")
         self.btn_5.setObjectName("btn_5")
         self.btn_6 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_6.setGeometry(QtCore.QRect(200, 140, 100, 90))
+        self.btn_6.setGeometry(QtCore.QRect(160, 140, 80, 90))
         font = QtGui.QFont()
         font.setPointSize(17)
         font.setBold(True)
@@ -102,7 +102,7 @@ class Ui_MainWindow(object):
         self.btn_6.setStyleSheet("background-color: rgb(170, 255, 255);")
         self.btn_6.setObjectName("btn_6")
         self.btn_7 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_7.setGeometry(QtCore.QRect(0, 50, 100, 90))
+        self.btn_7.setGeometry(QtCore.QRect(0, 50, 80, 90))
         font = QtGui.QFont()
         font.setPointSize(17)
         font.setBold(True)
@@ -111,7 +111,7 @@ class Ui_MainWindow(object):
         self.btn_7.setStyleSheet("background-color: rgb(170, 255, 255);")
         self.btn_7.setObjectName("btn_7")
         self.btn_8 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_8.setGeometry(QtCore.QRect(100, 50, 100, 90))
+        self.btn_8.setGeometry(QtCore.QRect(80, 50, 80, 90))
         font = QtGui.QFont()
         font.setPointSize(17)
         font.setBold(True)
@@ -120,7 +120,7 @@ class Ui_MainWindow(object):
         self.btn_8.setStyleSheet("background-color: rgb(170, 255, 255);")
         self.btn_8.setObjectName("btn_8")
         self.btn_9 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_9.setGeometry(QtCore.QRect(200, 50, 100, 90))
+        self.btn_9.setGeometry(QtCore.QRect(160, 50, 80, 90))
         font = QtGui.QFont()
         font.setPointSize(17)
         font.setBold(True)
@@ -128,10 +128,50 @@ class Ui_MainWindow(object):
         self.btn_9.setFont(font)
         self.btn_9.setStyleSheet("background-color: rgb(170, 255, 255);")
         self.btn_9.setObjectName("btn_9")
+        self.btn_multiplication = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_multiplication.setGeometry(QtCore.QRect(240, 250, 60, 70))
+        font = QtGui.QFont()
+        font.setPointSize(17)
+        font.setBold(True)
+        font.setWeight(75)
+        self.btn_multiplication.setFont(font)
+        self.btn_multiplication.setStyleSheet("background-color: rgb(170, 255, 255);")
+        self.btn_multiplication.setObjectName("btn_multiplication")
+        self.btn_divide = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_divide.setGeometry(QtCore.QRect(240, 180, 60, 70))
+        font = QtGui.QFont()
+        font.setPointSize(17)
+        font.setBold(True)
+        font.setWeight(75)
+        self.btn_divide.setFont(font)
+        self.btn_divide.setStyleSheet("background-color: rgb(170, 255, 255);")
+        self.btn_divide.setObjectName("btn_divide")
+        self.btn_add = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_add.setGeometry(QtCore.QRect(240, 50, 60, 68))
+        font = QtGui.QFont()
+        font.setPointSize(17)
+        font.setBold(True)
+        font.setWeight(75)
+        self.btn_add.setFont(font)
+        self.btn_add.setStyleSheet("background-color: rgb(170, 255, 255);")
+        self.btn_add.setObjectName("btn_add")
+        self.btn_sub = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_sub.setGeometry(QtCore.QRect(240, 117, 60, 68))
+        font = QtGui.QFont()
+        font.setPointSize(17)
+        font.setBold(True)
+        font.setWeight(75)
+        self.btn_sub.setFont(font)
+        self.btn_sub.setStyleSheet("background-color: rgb(170, 255, 255);")
+        self.btn_sub.setObjectName("btn_sub")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+        self.add_functions()
+
+        self.is_equal = False
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -148,6 +188,43 @@ class Ui_MainWindow(object):
         self.btn_7.setText(_translate("MainWindow", "7"))
         self.btn_8.setText(_translate("MainWindow", "8"))
         self.btn_9.setText(_translate("MainWindow", "9"))
+        self.btn_multiplication.setText(_translate("MainWindow", "*"))
+        self.btn_divide.setText(_translate("MainWindow", "/"))
+        self.btn_add.setText(_translate("MainWindow", "+"))
+        self.btn_sub.setText(_translate("MainWindow", "-"))
+
+
+    def add_functions(self):
+        self.btn_zero.clicked.connect(lambda: self.write_number(self.btn_zero.text()))
+        self.btn_1.clicked.connect(lambda: self.write_number(self.btn_1.text()))
+        self.btn_2.clicked.connect(lambda: self.write_number(self.btn_2.text()))
+        self.btn_3.clicked.connect(lambda: self.write_number(self.btn_3.text()))
+        self.btn_4.clicked.connect(lambda: self.write_number(self.btn_4.text()))
+        self.btn_5.clicked.connect(lambda: self.write_number(self.btn_5.text()))
+        self.btn_6.clicked.connect(lambda: self.write_number(self.btn_6.text()))
+        self.btn_7.clicked.connect(lambda: self.write_number(self.btn_7.text()))
+        self.btn_8.clicked.connect(lambda: self.write_number(self.btn_8.text()))
+        self.btn_9.clicked.connect(lambda: self.write_number(self.btn_9.text()))
+        self.btn_add.clicked.connect(lambda: self.write_number(self.btn_add.text()))
+        self.btn_divide.clicked.connect(lambda: self.write_number(self.btn_divide.text()))
+        self.btn_multiplication.clicked.connect(lambda: self.write_number(self.btn_multiplication.text()))
+        self.btn_sub.clicked.connect(lambda: self.write_number(self.btn_sub.text()))
+
+        self.btn_equal.clicked.connect(self.results)
+
+
+    def write_number(self, number):
+        if self.label_result.text() == "0" or self.is_equal:
+            self.label_result.setText(number)
+            self.is_equal = False
+        else:
+            self.label_result.setText(self.label_result.text() + number)
+
+
+    def results(self):
+        res = eval(self.label_result.text())
+        self.label_result.setText("Результат:" + str(res))
+        self.is_equal = True
 
 
 if __name__ == "__main__":
