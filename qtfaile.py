@@ -169,6 +169,9 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+        self.add_functions()
+        self.is_equal = False
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Калькулятор"))
@@ -188,6 +191,39 @@ class Ui_MainWindow(object):
         self.btn_divide.setText(_translate("MainWindow", "/"))
         self.btn_add.setText(_translate("MainWindow", "+"))
         self.btn_sub.setText(_translate("MainWindow", "-"))
+
+    def add_functions(self):
+        self.btn_zero.clicked.connect(lambda: self.write_number(self.btn_zero.text()))
+        self.btn_1.clicked.connect(lambda: self.write_number(self.btn_1.text()))
+        self.btn_2.clicked.connect(lambda: self.write_number(self.btn_2.text()))
+        self.btn_3.clicked.connect(lambda: self.write_number(self.btn_3.text()))
+        self.btn_4.clicked.connect(lambda: self.write_number(self.btn_4.text()))
+        self.btn_5.clicked.connect(lambda: self.write_number(self.btn_5.text()))
+        self.btn_6.clicked.connect(lambda: self.write_number(self.btn_6.text()))
+        self.btn_7.clicked.connect(lambda: self.write_number(self.btn_7.text()))
+        self.btn_8.clicked.connect(lambda: self.write_number(self.btn_8.text()))
+        self.btn_9.clicked.connect(lambda: self.write_number(self.btn_9.text()))
+        self.btn_add.clicked.connect(lambda: self.write_number(self.btn_add.text()))
+        self.btn_sub.clicked.connect(lambda: self.write_number(self.btn_sub.text()))
+        self.btn_multiplication.clicked.connect(lambda: self.write_number(self.btn_multiplication.text()))
+        self.btn_divide.clicked.connect(lambda: self.write_number(self.btn_divide.text()))
+
+        self.btn_equal.clicked.connect(self.result)
+
+
+    def write_number(self, number):
+        if self.label_result.text() == "0" or self.is_equal:
+            self.label_result.setText(number)
+            self.is_equal = False
+        else:
+            self.label_result.setText(self.label_result.text() + number)
+
+
+    def result(self):
+        res = eval(self.label_result.text())
+        self.label_result.setText("Результат: " + str(res))
+        self.is_equal = True
+
 
 
 if __name__ == "__main__":
